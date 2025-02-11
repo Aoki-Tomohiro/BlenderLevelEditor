@@ -14,6 +14,8 @@ from .disable import OBJECT_PT_disable
 from .draw_collider import DrawCollider
 from .load_spawn_object import MYADDON_OT_load_spawn_object
 from .create_spawn_object import MYADDON_OT_create_spawn_object
+from .spawn_object import MYADDON_OT_create_player_spawn_object
+from .spawn_object import MYADDON_OT_create_enemy_spawn_object
 
 #ブレンダーに登録するアドオン情報
 bl_info = {
@@ -36,6 +38,8 @@ classes = (
     MYADDON_OT_create_ico_sphere,
     MYADDON_OT_load_spawn_object,
     MYADDON_OT_create_spawn_object,
+    MYADDON_OT_create_player_spawn_object,
+    MYADDON_OT_create_enemy_spawn_object,
     MYADDON_OT_export_scene,
     TOPBAR_MT_my_menu,
     MYADDON_OT_add_filename,
