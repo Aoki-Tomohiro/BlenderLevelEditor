@@ -6,9 +6,11 @@ from .my_menu import TOPBAR_MT_my_menu
 from .add_filename import MYADDON_OT_add_filename
 from .add_collider import MYADDON_OT_add_collider
 from .add_visible import MYADDON_OT_add_visible
+from .add_disable import MYADDON_OT_add_disable
 from .file_name import OBJECT_PT_file_name
 from .collider import OBJECT_PT_collider
 from .visible import OBJECT_PT_visible
+from .disable import OBJECT_PT_disable
 from .draw_collider import DrawCollider
 
 #ブレンダーに登録するアドオン情報
@@ -35,9 +37,11 @@ classes = (
     MYADDON_OT_add_filename,
     MYADDON_OT_add_collider,
     MYADDON_OT_add_visible,
+    MYADDON_OT_add_disable,
     OBJECT_PT_file_name,
     OBJECT_PT_collider,
     OBJECT_PT_visible,
+    OBJECT_PT_disable,
 )
 
 #アドオン有効化時コールバック

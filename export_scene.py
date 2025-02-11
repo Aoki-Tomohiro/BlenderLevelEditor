@@ -177,6 +177,10 @@ class MYADDON_OT_export_scene(bpy.types.Operator, bpy_extras.io_utils.ExportHelp
         if "visible" in object:
             json_object["visible"] = object.visible
 
+        # カスタムプロパティ 'disable'
+        if "disable" in object:
+            json_object["disable"] = object.disable
+
         #1個分のjsonオブジェクトを親オブジェクトに登録
         data_parent.append(json_object)
 
