@@ -1,6 +1,7 @@
 import bpy
 from .stretch_vertex import MYADDON_OT_stretch_vertex
 from .create_ico_sphere import MYADDON_OT_create_ico_sphere
+from .create_spawn_object import MYADDON_OT_create_spawn_object
 from .export_scene import MYADDON_OT_export_scene
 
 #トップバーの拡張メニュー
@@ -23,6 +24,9 @@ class TOPBAR_MT_my_menu(bpy.types.Menu):
 
         #トップバーの「エディターメニュー」に項目(オペレータ)を追加
         self.layout.operator(MYADDON_OT_create_ico_sphere.bl_idname,text = MYADDON_OT_create_ico_sphere.bl_label)
+
+        #トップバーの「エディターメニュー」に項目(オペレータ)を追加
+        self.layout.operator(MYADDON_OT_create_spawn_object.bl_idname,text = MYADDON_OT_create_spawn_object.bl_label)
 
         #トップバーの「エディターメニュー」に項目(オペレータ)を追加
         self.layout.operator(MYADDON_OT_export_scene.bl_idname,text = MYADDON_OT_export_scene.bl_label)
